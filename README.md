@@ -49,9 +49,11 @@ Export your Hacker News saved links to JSON or CSV from the Chrome console.
 
 3. Hit "Next" at the bottom of your saved page. 
 
-4. Paste `grabPage` code into console again. 
+4. Paste `grabPage` code into console again. With each page load you'll need to repaste the entire `grabPage` code snippet since nothing is persisted between the loads. To save the data between page loads a local storage item is created with the key `hn_saved`. Each save item is keyed using it's record number so running the code twice on the same page is not an issue. 
+  
+  
    
-   Repeat "Next"/`grabPage` process until all pages are done. 
+  Repeat "Next"/`grabPage` process until all pages are done. 
 
 5. Save the output
    
