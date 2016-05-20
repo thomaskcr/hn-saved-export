@@ -1,4 +1,4 @@
-# hn-saved-export
+# Hacker News Saved Links Export
 
 Export your Hacker News saved links to JSON or CSV using only the Chrome console. 
 
@@ -48,12 +48,14 @@ Export your Hacker News saved links to JSON or CSV using only the Chrome console
   
   grabPage();
   ```
+  
+  ![](page-grab.png)
 
 3. Hit "Next" at the bottom of your saved page. 
 
 4. Paste `grabPage` code into console again. With each page load you'll need to repaste the entire `grabPage` code snippet since nothing is persisted between the loads. To save the data between page loads a local storage item is created with the key `hn_saved`. Each save item is keyed using it's record number so running the code twice on the same page is not an issue. 
   
-  
+  ![](page-grab-2.png)
    
   Repeat "Next"/`grabPage` process until all pages are done. 
 
@@ -98,7 +100,10 @@ Export your Hacker News saved links to JSON or CSV using only the Chrome console
     
     saveOutputCSV();
     ```
-
+    
+    If successful, the file will automatically download. 
+    
+    ![](csv-download.png)
 
   - To save output as a JSON, paste the following code. It will automatically download and save as `hn_saved.json`. 
      
@@ -121,3 +126,5 @@ Export your Hacker News saved links to JSON or CSV using only the Chrome console
     
     saveOutputJSON();
     ```
+    
+    ![](json-download.png)
