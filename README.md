@@ -1,6 +1,8 @@
 # hn-saved-export
 
-Export your Hacker News saved links to JSON or CSV from the Chrome console.
+Export your Hacker News saved links to JSON or CSV using only the Chrome console. 
+
+![](csv-example.png)
 
 1. Navigate to your HN Saved page in Google Chrome and press F12 to open the Developer Tools Console. 
 
